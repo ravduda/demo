@@ -1,0 +1,17 @@
+GET http://localhost:8080/movies HTTP/1.1
+###
+POST http://localhost:8080/movies HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Titanic",
+    "rating": 8
+}
+###
+PUT http://localhost:8080/movies/2 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Titanic 2",
+    "rating": 8
+}
